@@ -1,5 +1,5 @@
 require 'file_server/file_server'
-require 'line/line_notify'
+require 'line_notify/line_notify'
 
 LINE_NOTIFY_TOKEN = "xxx" # Your LINE Notify token
 
