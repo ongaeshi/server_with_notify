@@ -1,5 +1,7 @@
 require 'file_server/file_server'
-# require 'line/line_notify'
+require 'line/line_notify'
+
+LINE_NOTIFY_TOKEN = "xxx" # Your LINE Notify token
 
 server = FileServer.new({
   :server_ip => "0.0.0.0",
@@ -8,5 +10,5 @@ server = FileServer.new({
 })
 
 puts server.url
-# line_notify(server.url)
+line_notify(server.url, LINE_NOTIFY_TOKEN)
 server.run

@@ -19,9 +19,10 @@ Run file server and Notify the URL to LINE.
 5. Web application do not run in the background, so if you are going to receive LINE on the same machine please try switching between the browser and RubyPico.
 
 ```ruby
-.
-.
-TOKEN = "xxxxxxxxxx"  # Your LINE Notify token
+require 'file_server/file_server'
+require 'line/line_notify'
+
+LINE_NOTIFY_TOKEN = "xxxxxxxxxx"  # Your LINE Notify token
 .
 .
 ```
