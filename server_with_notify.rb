@@ -7,5 +7,6 @@ server = FileServer.new({
   :document_root => File.join(Dir.documents, "server_with_notify"),
 })
 
+puts server.url
 # line_notify(server.url)
 server.run
